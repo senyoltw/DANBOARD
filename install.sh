@@ -10,8 +10,17 @@ then
   exit 1
 fi
 
+## COPY FILE
 git ls-files | rsync -av   --exclude=".*" \
                            --exclude="LICENSE" \
                            --exclude="README.md" \
                            --exclude="install.sh" \
                            --files-from - . $install_dir
+
+
+## INSTALL dialogflow
+cd ~/voice-recognizer-raspi/
+env/bin/pip install dialogflow
+
+## for "ImportError: cannot import name 'opentype'"
+env/bin/pip install --upgrade google-auth-oauthlib
