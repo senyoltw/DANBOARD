@@ -13,7 +13,6 @@ import mod.skill  as skill
 import os
 import sys
 import uuid
-import subprocess
 
 aiy.i18n.set_language_code('ja-JP')
 myuuid = str(uuid.uuid4())
