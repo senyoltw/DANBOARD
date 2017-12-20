@@ -22,5 +22,16 @@ git ls-files | rsync -av   --exclude=".*" \
 cd ~/voice-recognizer-raspi/
 env/bin/pip install dialogflow
 
-## for "ImportError: cannot import name 'opentype'"
+## FOR "ImportError: cannot import name 'opentype'"
 env/bin/pip install --upgrade google-auth-oauthlib
+
+## INSTALL Open JTalk
+echo "Would you like to install Open JTalk(for Japanese) ?[y/n]"
+read ANSWER
+
+case $ANSWER in
+    [yY] )
+        sudo apt-get install open-jtalk open-jtalk-mecab-naist-jdic hts-voice-nitech-jp-atr503-m001;;
+    [nN] )
+        echo "OK. I don't install Open JTalk";;
+esac

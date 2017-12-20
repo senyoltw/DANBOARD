@@ -9,7 +9,7 @@ import aiy.audio
 TMP_DIR = '/run/user/%d' % os.getuid()
 voice = '/usr/share/hts-voice/nitech-jp-atr503-m001/nitech_jp_atr503_m001.htsvoice'
 
-def say(words, voice,  player=aiy.audio.get_player()):
+def say(words, voice=voice,  player=aiy.audio.get_player()):
     """Say the given words with TTS.
     Args:
       player: To play the text-to-speech audio.
