@@ -8,10 +8,12 @@ import aiy.voicehat
 import mod.snowboydecoder as snowboydecoder
 import mod.detect_intent_texts as detect_intent_texts
 import mod.tts_jp as tts
+import mod.skill  as skill
 
 import os
 import sys
 import uuid
+import subprocess
 
 aiy.i18n.set_language_code('ja-JP')
 myuuid = str(uuid.uuid4())
@@ -64,6 +66,10 @@ def main():
                     answer = text_recognizer.recognize(myuuid, text_params)
                     tts.say(answer.fulfillment_text)
 
+                skill_result = skill.execution(answer.intent.display_name)
+                if not skill_result is None:
+                    print(skill_result)
+                    tts.say(skill_result)
 
 if __name__ == '__main__':
     main()
