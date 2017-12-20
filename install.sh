@@ -32,6 +32,6 @@ read ANSWER
 case $ANSWER in
     [yY] )
         sudo apt-get install open-jtalk open-jtalk-mecab-naist-jdic hts-voice-nitech-jp-atr503-m001;;
-    [nN] )
+    * )
         echo "OK. I don't install Open JTalk";;
 esac
