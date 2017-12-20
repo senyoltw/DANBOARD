@@ -68,7 +68,7 @@ def main():
             print('INFO:Sorry, I did not hear you.')
         else:
             print('INFO:"', text, '"')
-            answer = text_recognizer.recognize(str(uuid.uuid4()),text)
+            answer = text_recognizer.recognize(str(uuid.uuid4()),text).fulfillment_text
             tts.say(answer)
 
 if __name__ == '__main__':

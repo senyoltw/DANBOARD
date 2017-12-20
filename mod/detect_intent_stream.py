@@ -130,7 +130,7 @@ class _Detect_Intent_Stream(object):
                 query_result.intent_detection_confidence))
             print('Fulfillment text: {}\n'.format(
                 query_result.fulfillment_text))
-            return query_result.fulfillment_text
+            return query_result
 
         except:
             print ('May be timeout')

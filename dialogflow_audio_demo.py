@@ -61,7 +61,7 @@ def main():
                        sleep_time=0.03)
 
         print('INFO:Listening...')
-        text = dialogflow.recognize(str(uuid.uuid4()))
+        text = dialogflow.recognize(str(uuid.uuid4())).fulfillment_text
 
         if not text:
             print('INFO:Sorry, I did not hear you.')
