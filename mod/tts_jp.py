@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """Wrapper around a open jtalk system."""
 
 import logging
