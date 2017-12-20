@@ -21,7 +21,6 @@ import aiy.i18n
 
 import mod.snowboydecoder as snowboydecoder
 import mod.detect_intent_texts as detect_intent_texts
-import mod.tts_jp as tts
 
 import os
 import sys
@@ -69,7 +68,7 @@ def main():
         else:
             print('INFO:"', text, '"')
             answer = text_recognizer.recognize(str(uuid.uuid4()),text).fulfillment_text
-            tts.say(answer)
+            print('INFO:"', answer, '"')
 
 if __name__ == '__main__':
     main()

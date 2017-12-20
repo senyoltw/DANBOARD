@@ -21,7 +21,6 @@ import aiy.i18n
 
 import mod.snowboydecoder as snowboydecoder
 import mod.detect_intent_stream as detect_intent_stream
-import mod.tts_jp as tts
 
 import os
 import sys
@@ -67,7 +66,6 @@ def main():
             print('INFO:Sorry, I did not hear you.')
         else:
             print('INFO:"', text, '"')
-            tts.say(text)
 
 if __name__ == '__main__':
     main()
