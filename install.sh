@@ -21,6 +21,7 @@ git ls-files | rsync -av   --exclude=".*" \
                            --files-from - . $install_dir/src
 
 ## INSTALL snowboy need lib
+echo "Install snowboy need lib."
 sudo apt-get install libatlas-base-dev
 
 ## INSTALL dialogflow
