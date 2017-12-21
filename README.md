@@ -2,9 +2,9 @@
 DANBOARD is module Add Dialogflow and Snowboy API for AIY Voice Kit
 
 # How to use
-You need install aiyprojects-raspbian before install DANBOARD.  
+You need to install aiyprojects-raspbian before install DANBOARD.  
 
-'''
+```
 # git clone https://github.com/senyoltw/DANBOARD
 # cd DANBOARD
 # sh install.sh
