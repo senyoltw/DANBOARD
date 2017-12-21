@@ -16,7 +16,7 @@ import uuid
 
 aiy.i18n.set_language_code('ja-JP')
 myuuid = str(uuid.uuid4())
-model = os.path.join(os.path.dirname(__file__),'danbo-.pmdl')
+model = os.path.join(os.path.dirname(__file__),'danboard.pmdl')
 
 def callbacks():
     #snowboydecoder.play_audio_file(snowboydecoder.DETECT_DING)
