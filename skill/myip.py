@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""You need to make dialogflow same name Intents.
+For example :
+Intent name : myip
+user says   : Say your ip, Check ip address,
+Responce    : OK. Check My ip address
+"""
+
 import subprocess
 
 def MyIP():
