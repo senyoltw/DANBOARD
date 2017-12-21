@@ -13,7 +13,7 @@ You need buy Nature Remo http://nature.global/
 import subprocess
 
 def webhook():
-    ip_address = subprocess.check_output("curl -X POST https://maker.ifttt.com/trigger/remo_off/with/key/[YOUR IFTTT KEY]", shell=True, universal_newlines=True)
+    curl_url = subprocess.check_output("curl -X POST https://maker.ifttt.com/trigger/remo_off/with/key/[YOUR IFTTT KEY]", shell=True, universal_newlines=True)
     word = 'エアコンをオフにしました'
     return word
 
