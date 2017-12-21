@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## CHECK AIY-projects path
-install_dir=~/AIY-projects-python/src/
+install_dir=~/AIY-projects-python
 
 if [ ! -e $install_dir ]
 then
@@ -18,12 +18,14 @@ git ls-files | rsync -av   --exclude=".*" \
                            --exclude="LICENSE" \
                            --exclude="README.md" \
                            --exclude="install.sh" \
-                           --files-from - . $install_dir
+                           --files-from - . $install_dir/src
 
+## INSTALL snowboy need lib
+sudo apt-get install libatlas-base-dev
 
 ## INSTALL dialogflow
 echo "Install dialogflow Python module."
-cd ~/voice-recognizer-raspi/
+cd $install_dir
 env/bin/pip install dialogflow
 
 ## FOR "ImportError: cannot import name 'opentype'"
