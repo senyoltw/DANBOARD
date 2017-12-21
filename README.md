@@ -11,13 +11,13 @@ You need to install aiyprojects-raspbian before install DANBOARD.
 ```
 
 # Description demo app 
-- snowboy_demo.py
+- snowboy_demo.py  
  snowboy -> Cloud Speech ->  print  text
  
- - dialogflow_audio_demo.py
+ - dialogflow_audio_demo.py  
  snowboy ->  dialogflow(audio) -> print dialogflow recognize text
  
- - dialogflow_text_demo.py
+ - dialogflow_text_demo.py  
  snowboy -> Cloud Speech -> dialogflow(text) -> print dialogflow recognize text
  
  # Description mod
