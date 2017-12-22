@@ -28,21 +28,21 @@ And You can run any script with the same name as dialogflow intent names.
  
  # Description mod
 - detect_intent_stream.py  
-DialogFlow API Detect Intent from an audio stream.
-How to use it -> see dialogflow_audio_demo.py
+DialogFlow API Detect Intent from an audio stream.  
+How to use it -> see dialogflow_audio_demo.py  
 
 - detect_intent_texts.py  
-DialogFlow API Detect Intent from text inputs.
-How to use it -> see dialogflow_text_demo.py 
+DialogFlow API Detect Intent from text inputs.  
+How to use it -> see dialogflow_text_demo.py  
 
-- skill.py
-RUN any script with the same name as dialogflow intent names.
-How to use it -> see danboard.py
+- skill.py  
+RUN any script with the same name as dialogflow intent names.  
+How to use it -> see danboard.py  
 
-- snowboydecoder.py
-DNN based hotword and wake word detection API.
-How to use it -> see snowboy_demo.py
+- snowboydecoder.py  
+DNN based hotword and wake word detection API.  
+How to use it -> see snowboy_demo.py  
 
-- tts_jp.py
-にほんごしゃべるやつ
-How to use it -> see danboard.py
+- tts_jp.py  
+にほんごしゃべるやつ  
+How to use it -> see danboard.py  
