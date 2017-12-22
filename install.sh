@@ -1,11 +1,19 @@
 #!/bin/bash
 
 ## CHECK AIY-projects path
-install_dir=~/AIY-projects-python
+install_dir_1=~/AIY-projects-python
+install_dir_2=~/voice-recognizer-raspi
 
-if [ ! -e $install_dir ]
+if [ -e $install_dir_1 ]
 then
-  echo $install_dir not found
+  install_dir = install_dir_1
+  echo $install_dir_1 found
+elif [ -e $install_dir_2 ]
+then
+  install_dir = install_dir_2
+  echo $install_dir_2 found
+else
+  echo "aiyprojects-raspbian install dir not found"
   echo "You need install aiyprojects-raspbian"
   echo "How to install https://github.com/google/aiyprojects-raspbian/blob/voicekit/HACKING.md"
   echo "...or fix this script"
